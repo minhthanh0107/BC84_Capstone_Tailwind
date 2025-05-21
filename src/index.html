@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Line awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <!-- Swiper css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+        integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+    <header id="header" class="top-0 ">
+        <div id="header-container">
+            <div id="header-top" class="bg-[var(--destructive)] sm:block hidden">
+                <div class="container mx-auto px-4">
+                    <div class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[15px]">
+                        <div class="top-left">
+                            <ul class="flex gap-8">
+                                <li>
+                                    <a href="tel:6295550129" class="text-white flex items-start gap-4">
+                                        <span>
+                                            <i class="fa-solid fa-phone"></i>
+                                        </span>
+                                        <span>(629) 555-0129</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@example.com" class="text-white flex items-start gap-4">
+                                        <span>
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span>
+                                        <span>info@example.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p class="text-white flex items-start gap-4" <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        </span>
+                                        <span>6391 Elgin St. Celina, 10299</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-right">
+                            <ul class="flex items-center gap-3.5">
+                                <li>
+                                    <a href=""
+                                        class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-white hover:bg-[var(--primary)] transition-all duration-500">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-white hover:bg-[var(--primary)] transition-all duration-500">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-white hover:bg-[var(--primary)] transition-all duration-500">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-white hover:bg-[var(--primary)] transition-all duration-500">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="header-bottom">
+                <div class="container mx-auto py-5 px-4">
+                    <div class="bottom_content flex justify-between items-center">
+                        <div>
+                            <a href="/src/index.html" class="bottom_left flex items-center gap-1">
+                                <img src="/assets/img/ascent-tailwind/logo.png" alt="logo.png">
+                                <span class="font-bold text-3xl">Ascent</span>
+                            </a>
+                        </div>
+                        <div class="bottom_right flex items-center">
+                            <nav class="xl:block hidden">
+                                <ul class="flex items-center gap-[25px]">
+                                    <li class="leading-[164%] relative py-5 group">
+                                        <a href="#"
+                                            class="font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500 py-5">
+                                            Home
+                                            <span class="">
+                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                            </span>
+                                        </a>
+                                        <ul
+                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            <li>
+                                                <a href="index.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Home-1</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-2.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Home-2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="leading-[164%] relative group">
+                                        <a href="about.html"
+                                            class="font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">About
+                                            Us</a>
+                                    </li>
+                                    <li class="leading-[164%] relative py-5 group">
+                                        <a href="#"
+                                            class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
+                                            Services
+                                            <span class="">
+                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                            </span>
+                                        </a>
+                                        <ul
+                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            <li>
+                                                <a href="services.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-details.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Service
+                                                    Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="leading-[164%] relative py-5 group">
+                                        <a href="#"
+                                            class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
+                                            Blog
+                                            <span class="">
+                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                            </span>
+                                        </a>
+                                        <ul
+                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            <li>
+                                                <a href="blog.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog
+                                                    Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="leading-[164%] relative py-5 group">
+                                        <a href="#"
+                                            class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
+                                            Page
+                                            <span class="">
+                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                            </span>
+                                        </a>
+                                        <ul
+                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            <li>
+                                                <a href="about.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="services.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-details.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Service
+                                                    Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Faq</a>
+                                            </li>
+                                            <li>
+                                                <a href="portfolio.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html"
+                                                    class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="leading-[164%] relative group">
+                                        <a href="contact.html"
+                                            class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- tab and mobile navbanr start -->
+                            <div class="block xl:hidden">
+                                <div
+                                    class="fixed left-0 top-0 w-full h-full bg-black/30 invisible transition-all offcanva-overlay">
+                                </div>
+                                <nav
+                                    class="bg-[var(--warm)] border-l-2 border-l-primary w-full max-w-md min-h-screen h-full overflow-y-auto p-7 shadow-md fixed -right-full top-0 z-50 transition-all duration-500 offcanva">
+                                    <div class="flex justify-between items-center">
+                                        <a href="" class="flex items-center gap-1">
+                                            <img src="/assets/img/ascent-tailwind/logo.png" alt="img">
+                                            <span class="font-bold text-3xl ">Ascent</span>
+                                        </a>
+                                        <div
+                                            class="bg-[var(--primary)] w-10 h-10 text-white flex items-center justify-center rounded-[4px] left-4 offcanvaClose">
+                                            <i class="fa-solid fa-xmark text-xl"></i>
+                                        </div>
+                                    </div>
+                                    <ul class=" mt-6">
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a href="#"
+                                                class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">
+                                                <span>Home</span>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <ul
+                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                <li>
+                                                    <a href="/src/index.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Home-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/src/index-2.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Home-2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full">
+                                            <a href="about.html"
+                                                class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">About
+                                                Us</a>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a href="#"
+                                                class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">
+                                                <span>Services</span>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <ul
+                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                <li>
+                                                    <a href="services.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service-details.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Service
+                                                        Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a href="#"
+                                                class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">
+                                                <span>Blog</span>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <ul
+                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                <li>
+                                                    <a href="blog.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-details.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Blog
+                                                        Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full dropdown">
+                                            <a href="#"
+                                                class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">
+                                                <span>Page</span>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <ul
+                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                <li>
+                                                    <a href="about.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="services.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a href="service-details.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Service
+                                                        Details</a>
+                                                </li>
+                                                <li>
+                                                    <a href="portfolio.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <a href="faq.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Faq's</a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html"
+                                                        class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="leading-[164%] relative w-full ">
+                                            <a href="contact.html"
+                                                class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 block border-b border-b-slate-300">Contact
+                                                Us</a>
+                                        </li>
+                                    </ul>
+                                    <!-- contact info start -->
+                                    <div class="mt-5">
+                                        <div>
+                                            <h4 class="text-xl font-bold text-[#385469]">Contact Info</h4>
+                                            <ul class="mt-5 flex flex-col gap-[15px]">
+                                                <li>
+                                                    <p>
+                                                        <i
+                                                            class="fa-solid fa-phone text-[var(--primary-foreground)]"></i>
+                                                        <a href="" class="ml-2.5">(629) 555-0129</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <i
+                                                            class="fa-solid fa-envelope text-[var(--primary-foreground)]"></i>
+                                                        <a href="" class="ml-2.5">info@example.com</a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <i
+                                                            class="fa-solid fa-location-dot text-[var(--primary-foreground)]"></i>
+                                                        <span class="ml-2.5">6391 Elgin St. Celina, 10299</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mt-5">
+                                            <a href="contact.html"
+                                                class="bg-[var(--primary)] text-white rounded-md sm:flex hidden items-center gap-2.5  btn after:bg-[var(--green)]">
+                                                Get A Quote
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <ul class="flex items-center gap-[14px] mt-6">
+                                            <li>
+                                                <a href=""
+                                                    class="rounded-md w-11 h-11 flex items-center justify-center text-black bg-white hover:bg-[var(--primary)] transition-all duration-500">
+                                                    <i class="fa-brands fa-facebook-f "></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=""
+                                                    class="rounded-md w-11 h-11 flex items-center justify-center text-black bg-white hover:bg-[var(--primary)] transition-all duration-500">
+                                                    <i class="fa-brands fa-x-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=""
+                                                    class="rounded-md w-11 h-11 flex items-center justify-center text-black bg-white hover:bg-[var(--primary)] transition-all duration-500">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=""
+                                                    class="rounded-md w-11 h-11 flex items-center justify-center text-black bg-white hover:bg-[var(--primary)] transition-all duration-500">
+                                                    <i class="fa-brands fa-pinterest-p"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- contact info end -->
+                                </nav>
+                            </div>
+                            <div class="flex items-center gap-6 ">
+                                <div class="ml-16 cursor-pointer search-btn">
+                                    <i class="fa-solid fa-magnifying-glass "></i>
+                                </div>
+                                <!-- <p class="h-11 w-[1px] bg-muted xl:block hidden"></p> -->
+                                <a href="contact.html"
+                                    class="bg-[var(--secondary)] text-white rounded-md sm:flex hidden items-center gap-2.5 btn after:bg-[var(--green)]">
+                                    Get A Quote
+                                    <span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                                <div class="block xl:hidden">
+                                    <div
+                                        class="flex flex-col items-end cursor-pointer transition-all duration-500 offcanvaTragger">
+                                        <span class="block h-[3px] w-5 bg-muted"></span>
+                                        <span class="block h-[3px] w-7.5 bg-muted mt-2"></span>
+                                        <span class="block h-[3px] w-5 bg-muted mt-2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search, toggle and contact btn end -->
+                            <form action="#"
+                                class="opacity-0 invisible transition-all duration-500 absolute left-0 bottom-0 w-full lg:h-[calc(100%-32%)] md:h-[calc(100%-50%)] h-[calc(100%-0%)] search-form ">
+                                <input type="text" name="search" id="search" placeholder="Search here"
+                                    class="w-full h-full border border-gray-400 px-10 rounded-md outline-none">
+                                <label for="search"
+                                    class="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer search-close">
+                                    <i class="fa-solid fa-xmark border-gray-400  text-xl"></i>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="carousel bg-[var(--warm)] pt-[78px] lg:mb-15 mb-10 relative">
+        <div class="container mx-auto px-4 py-5 relative">
+            <div class="flex flex-col items-center text-center relative z-10">
+                <h1
+                    class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]">
+                    <span class="relative">
+                        Exploring Minds
+                        <span class="absolute -left-6 top-1 text-3xl">
+                            <i class="icon-three-line"></i>
+                        </span>
+                    </span>
+                    <span class="font-bold">Elementary</span>
+                    <span class="font-bold text-[var(--destructive-foreground)]">School</span>
+                </h1>
+                <div class="flex absolute right-[87px] top-14 animate-skw">
+                    <img src="/assets/img/ascent-tailwind/shap.png" alt="shap-2" class="w-7.5 h-12.5 relative top-9">
+                    <img src="/assets/img/ascent-tailwind/shap.png" alt="shap-1">
+                    <img src="/assets/img/ascent-tailwind/shap.png" alt="shap-2" class="w-5 h-8 -mt-7">
+                </div>
+                <p class="pt-5 max-w-[431px]">Starting a corporate business typically involves several steps, such as
+                    develo a business</p>
+                <a href="" class="mt-6 bg-[var(--green)] text-white rounded-md max-h-15 leading-normal btn">Learn
+                    More</a>
+            </div>
+            <div class="absolute left-2.5 lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down">
+                <img src="/assets/img/ascent-tailwind/boy_img_1.png" alt="banner-img-1">
+                <span
+                    class="absolute -left-2.5 top-[9px] border-2 border-[var(--primary)] rounded-[125px] w-full h-full"></span>
+            </div>
+            <div class="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down">
+                <img src="/assets/img/ascent-tailwind/boy_img_2.png" alt="banner-img-2">
+                <span
+                    class="absolute -left-2.5 top-[9px] border-2 border-[var(--secondary)] rounded-[125px] max-h-[369px] w-full h-full"></span>
+            </div>
+            <div class="lg:pt-[72px]">
+                <img src="/assets/img/ascent-tailwind/painting.png" alt="painting">
+            </div>
+        </div>
+        <div class="lg:block hidden">
+            <div class="absolute left-0 top-[60px] animate-left-right-2">
+                <img src="/assets/img/ascent-tailwind/left-circle-1.png" alt="img">
+            </div>
+            <div class="absolute left-[37px] top-[186px] animate-left-right-2">
+                <img src="/assets/img/ascent-tailwind/left-circle-2.png" alt="img">
+            </div>
+            <div class="absolute right-0 bottom-[165px] animate-up-down">
+                <img src="/assets/img/ascent-tailwind/right-circle.png" alt="img">
+            </div>
+        </div>
+    </section>
+    <section class="counter lg:pt-15 pt-10 lg:pb-15 pb-10">
+        <div class="container mx-auto px-4 py-5">
+            <div class="grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5">
+                <!-- left side start -->
+                <div class="counter_left lg:max-w-[600px]">
+                    <p
+                        class="text-[var(--primary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
+                        Number
+                        Talks</p>
+                    <h2
+                        class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".5s">
+                        Invest in education invest in the future</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay="1s">Lorem ipsum dolor sit amet
+                        consectetur. Amet lectus mi
+                        ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum
+                        Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
+                    <button class="border border-gray-200 rounded-md lg:mt-10 mt-7 btn">Get a quote</button>
+                </div>
+                <!-- left side end -->
+                <!-- right side start -->
+                <div class="counter_right grid sm:grid-cols-2 grid-cols-1 gap-7.5">
+                    <!-- card -->
+                    <div
+                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        <div
+                            class="rounded-full bg-[var(--primary)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
+                            <i class="icon-kindergarden fa-solid fa-pencil lg:text-[40px] text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">20K</h4>
+                            <p>Running Students</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div
+                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        <div
+                            class="rounded-full bg-[var(--destructive)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
+                            <i class="icon-book fa-solid fa-book lg:text-[40px] text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div
+                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                        <div
+                            class="rounded-full bg-[var(--green)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
+                            <i class="icon-blocks fa-solid fa-cube lg:text-[40px] text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">3K</h4>
+                            <p>Award Winning</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div
+                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                        <div
+                            class="rounded-full bg-[var(--secondary)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
+                            <i class="icon-book fa-solid fa-book lg:text-[40px] text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold lg:text-[32px] md:text-[28px] text-2xl">13K</h4>
+                            <p>Guardian Satishfaction</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                </div>
+                <!-- right side end -->
+            </div>
+        </div>
+    </section>
+    <section class="about"></section>
+    <section class="programs"></section>
+    <section class="portfolio"></section>
+    <section class="service"></section>
+    <section class="faq"></section>
+    <section class="team"></section>
+    <section class="age"></section>
+    <section class="testimonial"></section>
+    <section class="blog"></section>
+    <section class="letter"></section>
+    <footer></footer>
+
+
+
+
+    <!-- ---------------------------------------------- -->
+    <!-- SCRIPT -->
+    <!-- TW-elements -->
+    <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- WOW -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
