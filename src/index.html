@@ -30,15 +30,15 @@
 </head>
 
 <body>
-    <header id="header" class="top-0 ">
+    <header id="header" class="sticky top-0 transition-[top] duration-300 z-40" style="top: -160px;">
         <div id="header-container">
             <div id="header-top" class="bg-[var(--destructive)] sm:block hidden">
-                <div class="container mx-auto px-4">
+                <div class="container px-4 mx-auto">
                     <div class="flex lg:flex-row flex-col justify-between items-center gap-2 py-[15px]">
                         <div class="top-left">
                             <ul class="flex gap-8">
                                 <li>
-                                    <a href="tel:6295550129" class="text-white flex items-start gap-4">
+                                    <a href="tel:6295550129" class="flex items-start gap-4 text-white">
                                         <span>
                                             <i class="fa-solid fa-phone"></i>
                                         </span>
@@ -46,7 +46,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:info@example.com" class="text-white flex items-start gap-4">
+                                    <a href="mailto:info@example.com" class="flex items-start gap-4 text-white">
                                         <span>
                                             <i class="fa-solid fa-envelope"></i>
                                         </span>
@@ -54,7 +54,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <p class="text-white flex items-start gap-4" <span>
+                                    <p class="flex items-start gap-4 text-white" <span>
                                         <i class="fa-solid fa-location-dot"></i>
                                         </span>
                                         <span>6391 Elgin St. Celina, 10299</span>
@@ -94,27 +94,27 @@
                 </div>
             </div>
             <div id="header-bottom">
-                <div class="container mx-auto py-5 px-4">
-                    <div class="bottom_content flex justify-between items-center">
+                <div class="container px-4 py-5 mx-auto">
+                    <div class="flex items-center justify-between bottom_content">
                         <div>
-                            <a href="/src/index.html" class="bottom_left flex items-center gap-1">
+                            <a href="/src/index.html" class="flex items-center gap-1 bottom_left">
                                 <img src="/assets/img/ascent-tailwind/logo.png" alt="logo.png">
-                                <span class="font-bold text-3xl">Ascent</span>
+                                <span class="text-3xl font-bold">Ascent</span>
                             </a>
                         </div>
-                        <div class="bottom_right flex items-center">
-                            <nav class="xl:block hidden">
+                        <div class="flex items-center bottom_right">
+                            <nav class="hidden xl:block">
                                 <ul class="flex items-center gap-[25px]">
                                     <li class="leading-[164%] relative py-5 group">
                                         <a href="#"
                                             class="font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500 py-5">
                                             Home
                                             <span class="">
-                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                                <i class="text-sm fa-solid fa-angle-down"></i>
                                             </span>
                                         </a>
                                         <ul
-                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bt-white min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                             <li>
                                                 <a href="index.html"
                                                     class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Home-1</a>
@@ -135,11 +135,11 @@
                                             class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
                                             Services
                                             <span class="">
-                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                                <i class="text-sm fa-solid fa-angle-down"></i>
                                             </span>
                                         </a>
                                         <ul
-                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bt-white min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                             <li>
                                                 <a href="services.html"
                                                     class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Services</a>
@@ -156,11 +156,11 @@
                                             class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
                                             Blog
                                             <span class="">
-                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                                <i class="text-sm fa-solid fa-angle-down"></i>
                                             </span>
                                         </a>
                                         <ul
-                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bt-white min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                             <li>
                                                 <a href="blog.html"
                                                     class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">Blog</a>
@@ -177,11 +177,11 @@
                                             class=" font-semibold text-lg font-jost group-hover:text-[var(--primary-foreground)]transition-all duration-500">
                                             Page
                                             <span class="">
-                                                <i class="fa-solid fa-angle-down text-sm"></i>
+                                                <i class="text-sm fa-solid fa-angle-down"></i>
                                             </span>
                                         </a>
                                         <ul
-                                            class="absolute top-full z-10 bt-white shadow-sm min-w-56 transition-all duration-500 opacity-0 invisible translate-y-5 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                                            class="absolute z-10 invisible transition-all duration-500 translate-y-5 shadow-sm opacity-0 top-full bt-white min-w-56 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
                                             <li>
                                                 <a href="about.html"
                                                     class=" font-semibold font-jost hover:text-white hover:bg-[var(--primary)] transition-all duration-500 py-3 px-2.5 block border-b border-b-slate-300">About</a>
@@ -219,21 +219,21 @@
                             <!-- tab and mobile navbanr start -->
                             <div class="block xl:hidden">
                                 <div
-                                    class="fixed left-0 top-0 w-full h-full bg-black/30 invisible transition-all offcanva-overlay">
+                                    class="fixed top-0 left-0 invisible w-full h-full transition-all bg-black/30 offcanva-overlay">
                                 </div>
                                 <nav
                                     class="bg-[var(--warm)] border-l-2 border-l-primary w-full max-w-md min-h-screen h-full overflow-y-auto p-7 shadow-md fixed -right-full top-0 z-50 transition-all duration-500 offcanva">
-                                    <div class="flex justify-between items-center">
+                                    <div class="flex items-center justify-between">
                                         <a href="" class="flex items-center gap-1">
                                             <img src="/assets/img/ascent-tailwind/logo.png" alt="img">
-                                            <span class="font-bold text-3xl ">Ascent</span>
+                                            <span class="text-3xl font-bold ">Ascent</span>
                                         </a>
                                         <div
                                             class="bg-[var(--primary)] w-10 h-10 text-white flex items-center justify-center rounded-[4px] left-4 offcanvaClose">
-                                            <i class="fa-solid fa-xmark text-xl"></i>
+                                            <i class="text-xl fa-solid fa-xmark"></i>
                                         </div>
                                     </div>
-                                    <ul class=" mt-6">
+                                    <ul class="mt-6 ">
                                         <li class="leading-[164%] relative w-full dropdown">
                                             <a href="#"
                                                 class="font-jost py-2.5 border-b border-b-slate-300 text-[#385469] flex justify-between items-center">
@@ -241,7 +241,7 @@
                                                 <i class="fa-solid fa-plus"></i>
                                             </a>
                                             <ul
-                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                class="invisible w-full transition-all duration-500 opacity-0 max-h-0 min-w-56 dropdown-item">
                                                 <li>
                                                     <a href="/src/index.html"
                                                         class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Home-1</a>
@@ -264,7 +264,7 @@
                                                 <i class="fa-solid fa-plus"></i>
                                             </a>
                                             <ul
-                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                class="invisible w-full transition-all duration-500 opacity-0 max-h-0 min-w-56 dropdown-item">
                                                 <li>
                                                     <a href="services.html"
                                                         class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Services</a>
@@ -283,7 +283,7 @@
                                                 <i class="fa-solid fa-plus"></i>
                                             </a>
                                             <ul
-                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                class="invisible w-full transition-all duration-500 opacity-0 max-h-0 min-w-56 dropdown-item">
                                                 <li>
                                                     <a href="blog.html"
                                                         class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">Blog</a>
@@ -302,7 +302,7 @@
                                                 <i class="fa-solid fa-plus"></i>
                                             </a>
                                             <ul
-                                                class="max-h-0 min-w-56 w-full opacity-0 invisible transition-all duration-500 dropdown-item">
+                                                class="invisible w-full transition-all duration-500 opacity-0 max-h-0 min-w-56 dropdown-item">
                                                 <li>
                                                     <a href="about.html"
                                                         class="text-[#385469] font-jost hover:text-[var(--secondary-foreground)] transition-all duration-500 py-2.5 px-6 block border-b border-b-slate-300">About</a>
@@ -417,7 +417,7 @@
                                 </a>
                                 <div class="block xl:hidden">
                                     <div
-                                        class="flex flex-col items-end cursor-pointer transition-all duration-500 offcanvaTragger">
+                                        class="flex flex-col items-end transition-all duration-500 cursor-pointer offcanvaTragger">
                                         <span class="block h-[3px] w-5 bg-muted"></span>
                                         <span class="block h-[3px] w-7.5 bg-muted mt-2"></span>
                                         <span class="block h-[3px] w-5 bg-muted mt-2"></span>
@@ -428,10 +428,10 @@
                             <form action="#"
                                 class="opacity-0 invisible transition-all duration-500 absolute left-0 bottom-0 w-full lg:h-[calc(100%-32%)] md:h-[calc(100%-50%)] h-[calc(100%-0%)] search-form ">
                                 <input type="text" name="search" id="search" placeholder="Search here"
-                                    class="w-full h-full border border-gray-400 px-10 rounded-md outline-none">
+                                    class="w-full h-full px-10 border border-gray-400 rounded-md outline-none">
                                 <label for="search"
-                                    class="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer search-close">
-                                    <i class="fa-solid fa-xmark border-gray-400  text-xl"></i>
+                                    class="absolute -translate-y-1/2 cursor-pointer right-10 top-1/2 search-close">
+                                    <i class="text-xl border-gray-400 fa-solid fa-xmark"></i>
                                 </label>
                             </form>
                         </div>
@@ -441,13 +441,13 @@
         </div>
     </header>
     <section class="carousel bg-[var(--warm)] pt-[78px] lg:mb-15 mb-10 relative">
-        <div class="container mx-auto px-4 py-5 relative">
-            <div class="flex flex-col items-center text-center relative z-10">
+        <div class="container relative px-4 py-5 mx-auto">
+            <div class="relative z-10 flex flex-col items-center text-center">
                 <h1
                     class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]">
                     <span class="relative">
                         Exploring Minds
-                        <span class="absolute -left-6 top-1 text-3xl">
+                        <span class="absolute text-3xl -left-6 top-1">
                             <i class="icon-three-line"></i>
                         </span>
                     </span>
@@ -478,7 +478,7 @@
                 <img src="/assets/img/ascent-tailwind/painting.png" alt="painting">
             </div>
         </div>
-        <div class="lg:block hidden">
+        <div class="hidden lg:block">
             <div class="absolute left-0 top-[60px] animate-left-right-2">
                 <img src="/assets/img/ascent-tailwind/left-circle-1.png" alt="img">
             </div>
@@ -490,8 +490,8 @@
             </div>
         </div>
     </section>
-    <section class="counter lg:pt-15 pt-10 lg:pb-15 pb-10">
-        <div class="container mx-auto px-4 py-5">
+    <section class="counter pt-10 pb-10 lg:pt-15 lg:pb-15">
+        <div class="container px-4 py-5 mx-auto">
             <div class="grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5">
                 <!-- left side start -->
                 <div class="counter_left lg:max-w-[600px]">
@@ -499,9 +499,8 @@
                         class="text-[var(--primary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
                         Number
                         Talks</p>
-                    <h2
-                        class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow animate__animated animate__fadeInUp"
-                    data-wow-delay=".5s">
+                    <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[410px] pb-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".5s">
                         Invest in education invest in the future</h2>
                     <p class="wow animate__animated animate__fadeInUp" data-wow-delay="1s">Lorem ipsum dolor sit amet
                         consectetur. Amet lectus mi
@@ -513,8 +512,8 @@
                 <!-- right side start -->
                 <div class="counter_right grid sm:grid-cols-2 grid-cols-1 gap-7.5">
                     <!-- card -->
-                    <div
-                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                    <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".5s">
                         <div
                             class="rounded-full bg-[var(--primary)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
                             <i class="icon-kindergarden fa-solid fa-pencil lg:text-[40px] text-3xl text-white"></i>
@@ -526,8 +525,8 @@
                     </div>
                     <!-- card -->
                     <!-- card -->
-                    <div
-                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                    <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".5s">
                         <div
                             class="rounded-full bg-[var(--destructive)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
                             <i class="icon-book fa-solid fa-book lg:text-[40px] text-3xl text-white"></i>
@@ -539,8 +538,8 @@
                     </div>
                     <!-- card -->
                     <!-- card -->
-                    <div
-                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                    <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay="1s">
                         <div
                             class="rounded-full bg-[var(--green)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
                             <i class="icon-blocks fa-solid fa-cube lg:text-[40px] text-3xl text-white"></i>
@@ -552,8 +551,8 @@
                     </div>
                     <!-- card -->
                     <!-- card -->
-                    <div
-                        class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                    <div class="rounded-lg border border-gray-200 px-[18px] lg:py-7.5 py-5 flex items-center gap-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay="1s">
                         <div
                             class="rounded-full bg-[var(--secondary)] lg:w-20 lg:h-20 w-16 h-16 flex items-center justify-center">
                             <i class="icon-book fa-solid fa-book lg:text-[40px] text-3xl text-white"></i>
@@ -569,7 +568,51 @@
             </div>
         </div>
     </section>
-    <section class="about"></section>
+    <section class="about pt-10 pb-10 lg:pt-15 lg:pb-15">
+        <div class="container px-4 py-5 mx-auto">
+            <div class="grid lg:grid-cols-[60%_40%] grid-cols-1 items-center">
+                <div class="relative">
+                    <div class="flex flex-col gap-6 sm:flex-row sm:items-end">
+                        <div class="wow animate__animated animate__fadeInUp" data-wow-delay="1200">
+                            <div class="">
+                                <img src="/assets/img/ascent-tailwind/shap-1.png" alt="shap">
+                            </div>
+                            <div class="ml-9">
+                                <img src="/assets/img/ascent-tailwind/about-1.png" alt="about-bg" class="w-full">
+                            </div>
+                        </div>
+                        <div class="flex gap-8 sm:flex-col">
+                            <div
+                                class="bg-[var(--warm)] max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col items-center justify-center text-center">
+                                <img src="/assets/img/ascent-tailwind/icreement.png" alt="icreement">
+                                <h6 class="text-xl font-bold">Academy</h6>
+                                <p>Learning Ladder School</p>
+                            </div>
+                            <div
+                                class="bg-white max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col justify-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
+                                <h6 class="text-[32px] font-bold text-[var(--secondary-foreground)]">10+</h6>
+                                <p>Learning Ladder School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side start -->
+                <div class="lg:max-w-[439px] pt-7.5">
+                    <p class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow fadeInUp">About Us</p>
+                    <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] pb-5 wow animate__animated animate__fadeInUp"
+                        data-wow-delay=".5s">Unlocking Potential, One Child at a just Time in school</h2>
+                    <p class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur. Amet lectus mi
+                        ultricies dictum facilisis sem. Imperdiet
+                        massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
+                        lectus mi ultricies dictum</p>
+                    <a href="contact.html"
+                        class="border border-gray-200 rounded-md lg:mt-10 mt-7 hover:text-white btn">Get a
+                        quote</a>
+                </div>
+                <!-- right side end -->
+            </div>
+        </div>
+    </section>
     <section class="programs"></section>
     <section class="portfolio"></section>
     <section class="service"></section>
@@ -596,7 +639,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        </script>
     <script>
         new WOW().init();
     </script>
