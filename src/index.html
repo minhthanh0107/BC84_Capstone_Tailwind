@@ -760,22 +760,31 @@
             </div>
             <div class="portfolio_content pt-10">
                 <ul class="flex items-center justify-center flex-wrap md:gap-7.5 gap-5">
-                    <li class="px-5 py-2.5 text-xl font-700 active-tab border border-[#F2F2F2] rounded-[10px] font-jost cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
-                        data-target="education">Education</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
-                        data-target="school">School</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
-                        data-target="learn">Learn</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
+                    <li class="px-5 py-2.5 text-xl font-700 border border-[#F2F2F2] rounded-[10px] font-jost cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
+                        data-target="education" href="#pills-education" id="pills-education-tab" data-twe-toggle="pill"
+                        data-twe-target="#pills-education" data-twe-nav-active role="tab"
+                        aria-controls="pills-ecudation" aria-selected="true">
+
+                        Education</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
+                        data-target="school" href="#pills-school" id="pills-school-tab" data-twe-toggle="pill"
+                        data-twe-target="#pills-school" data-twe-nav-active role="tab" aria-controls="pills-school"
+                        aria-selected="false">School</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
+                        data-target="learn" href="#pills-learn" id="pills-learn-tab" data-twe-toggle="pill"
+                        data-twe-target="#pills-learn" role="tab" aria-controls="pills-learn"
+                        aria-selected="false">Learn</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 "
                         data-target="child">Child</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
                         data-target="coaching">Coaching</li>
                 </ul>
                 <div class="mt-[64px] overflow-hidden relative wow animate__animated animate__fadeInUp"
                     data-wow-delay=".3s">
                     <!-- group one -->
-                    <div data-target="education" id="education"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] relative top-0 left-0 transition-all duration-500 translate-y-0 target-card">
+                    <div data-target="education" id="pills-education" role="tabpanel"
+                        aria-labelledby="pills-education-tab" data-twe-tab-active
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] relative top-0 left-0 transition-all duration-500 translate-y-0">
                         <!-- card start -->
                         <div
                             class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
@@ -872,8 +881,8 @@
                     </div>
                     <!-- group one -->
                     <!-- group two -->
-                    <div data-target="school" id="school"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+                    <div data-target="school" id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
@@ -949,8 +958,8 @@
                     </div>
                     <!-- group two -->
                     <!-- group three -->
-                    <div data-target="learn" id="learn"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+                    <div data-target="learn" id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-3.png" alt="img"
@@ -991,7 +1000,7 @@
                     <!-- group three -->
                     <!-- group four -->
                     <div data-target="child" id="child"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
@@ -1032,7 +1041,7 @@
                     <!-- group four -->
                     <!-- group five -->
                     <div data-target="coaching" id="coaching"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card">
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
                         <!-- card start -->
                         <div
                             class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
@@ -1160,7 +1169,7 @@
     <script>
         new WOW().init();
     </script>
-    <script>
+    <!-- <script>
         const tabs = document.querySelectorAll('.target-tab');
         const contents = document.querySelectorAll('.tab-content');
 
@@ -1182,7 +1191,7 @@
                 }
             });
         });
-    </script>
+    </script> -->
 
 </body>
 
