@@ -772,8 +772,8 @@
                         aria-selected="false">School</li>
                     <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
                         data-target="learn" href="#pills-learn" id="pills-learn-tab" data-twe-toggle="pill"
-                        data-twe-target="#pills-learn" role="tab" aria-controls="pills-learn"
-                        aria-selected="false">Learn</li>
+                        data-twe-target="#pills-learn" role="tab" aria-controls="pills-learn" aria-selected="false">
+                        Learn</li>
                     <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 "
                         data-target="child">Child</li>
                     <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
@@ -1141,7 +1141,165 @@
             </div>
         </div>
     </section>
-    <section class="service"></section>
+    <section class="service pt-15 pb-15 relative bg-[var(--warm)] lg:bg-transparent">
+        <div class="container mx-auto px-4 py5">
+            <div
+                class="relative after:absolute after:right-0 after:top-0 after:lg:bg-[var(--warm)] after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
+                <div class="flex lg:flex-row flex-col justify-between lg:items-center">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
+                        <p class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">Latest Service
+                        </p>
+                        <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">Building a Str Foundation for Success</h2>
+                    </div>
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]">
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis
+                            hendrerit proin mollis pretium facilisi in, ligula volutpat </p>
+                    </div>
+                </div>
+                <div class="lg:flex justify-between">
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
+                        <div class="relative lg:mt-7.5 mt-5">
+                            <div class="service-pagination"></div>
+                            <div class="lg:mt-10 mt-5">
+                                <a href=""
+                                    class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">
+                                    Read More <i
+                                        class="fa-solid fa-arrow-right text-[var(--secondary-foreground)] transition-all duration-500 group-hover:text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
+                        <div class="">
+                            <div class="swiper service-swiper">
+                                <div
+                                    class="swiper-wrapper [&_.swiper-slide-active>.service-card]:bg-white [&_.swiper-slide-active_.card-footer]:opacity-100 [&_.swiper-slide-active_.card-footer]:visible ">
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                            <i class="icon-mat text-[65px] text-[var(--green-foreground)]"></i>
+                                            <h4 class="lg:max-w-[176px] mt-5">
+                                                <a href="service-details.html"
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Learning
+                                                    School heres us</a>
+                                            </h4>
+                                            <div
+                                                class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
+                                                    conse adipiscing </p>
+                                                <a href="service-details.html"
+                                                    class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                    <span
+                                                        class="group-hover/btn:text-[var(--green-foreground)] transition-all duration-500">Read
+                                                        More</span>
+                                                    <span
+                                                        class="group-hover/btn:ml-1 text-[var(--green-foreground)] transition-all duration-500">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                            <i class="icon-baby-body text-[65px] text-[var(--green-foreground)]"></i>
+                                            <h4 class="lg:max-w-[176px] mt-5">
+                                                <a href="service-details.html"
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Learning
+                                                    in the School</a>
+                                            </h4>
+                                            <div
+                                                class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
+                                                    conse adipiscing </p>
+                                                <a href="service-details.html"
+                                                    class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                    <span
+                                                        class="group-hover/btn:text-[var(--green-foreground)] transition-all duration-500">Read
+                                                        More</span>
+                                                    <span
+                                                        class="group-hover/btn:ml-1 text-[var(--green-foreground)] transition-all duration-500">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                            <i class="icon-teddy-bear text-[65px] text-[var(--green-foreground)]"></i>
+                                            <h4 class="lg:max-w-[176px] mt-5">
+                                                <a href="service-details.html"
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Stars
+                                                    Preschool our design</a>
+                                            </h4>
+                                            <div
+                                                class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
+                                                    conse adipiscing </p>
+                                                <a href="service-details.html"
+                                                    class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                    <span
+                                                        class="group-hover/btn:text-[var(--green-foreground)] transition-all duration-500">Read
+                                                        More</span>
+                                                    <span
+                                                        class="group-hover/btn:ml-1 text-[var(--green-foreground)] transition-all duration-500">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
+                                            <i class="icon-mat text-[65px] text-[var(--green-foreground)]"></i>
+                                            <h4 class="lg:max-w-[176px] mt-5">
+                                                <a href="service-details.html"
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Stars
+                                                    Preschool our design</a>
+                                            </h4>
+                                            <div
+                                                class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
+                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
+                                                    conse adipiscing </p>
+                                                <a href="service-details.html"
+                                                    class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
+                                                    <span
+                                                        class="group-hover/btn:text-[var(--green-foreground)] transition-all duration-500">Read
+                                                        More</span>
+                                                    <span
+                                                        class="group-hover/btn:ml-1 text-[var(--green-foreground)] transition-all duration-500">
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shap start -->
+        <div class="absolute lg:left-24 left-4 lg:bottom-20 bottom-3 animate-left-right sm:block hidden">
+            <img src="/assets/img/ascent-tailwind/man.png" alt="img">
+        </div>
+        <!-- shap end -->
+    </section>
     <section class="faq"></section>
     <section class="team"></section>
     <section class="age"></section>
