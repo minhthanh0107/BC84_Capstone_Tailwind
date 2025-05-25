@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -1147,7 +1149,9 @@
                 class="relative after:absolute after:right-0 after:top-0 after:lg:bg-[var(--warm)] after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
                 <div class="flex lg:flex-row flex-col justify-between lg:items-center">
                     <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
-                        <p class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">Latest Service
+                        <p
+                            class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
+                            Latest Service
                         </p>
                         <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow animate__animated animate__fadeInUp"
                             data-wow-delay=".3s">Building a Str Foundation for Success</h2>
@@ -1295,14 +1299,310 @@
             </div>
         </div>
         <!-- shap start -->
-        <div class="absolute lg:left-24 left-4 lg:bottom-20 bottom-3 animate-left-right sm:block hidden">
+        <div class="absolute lg:left-24 left-4 lg:bottom-18 bottom-3 animate-left-right sm:block hidden">
             <img src="/assets/img/ascent-tailwind/man.png" alt="img">
         </div>
         <!-- shap end -->
     </section>
-    <section class="faq"></section>
-    <section class="team"></section>
-    <section class="age"></section>
+    <section class="faq lg:pb-15 pb-10">
+        <div class="container mx-auto px-5 py-5">
+            <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
+                <div class="max-w-[528px] lg:max-w-full mx-auto">
+                    <img src="/assets/img/ascent-tailwind/banner-1.png" alt="child with laptop">
+                </div>
+                <div>
+                    <div class="mb-6">
+                        <h3 class="text-cyan-500 font-bold text-xl wow animate__animated animate__fadeInUp">Some Faq
+                        </h3>
+                        <h1 class="text-4xl font-extrabold leading-snug mt-2 wow animate__animated animate__fadeInUp"
+                            data-wow-delay=".3s">
+                            Empowering Children Through<br />Education Playful Mind
+                        </h1>
+                    </div>
+                    <!-- according start -->
+                    <div class="space-y-4">
+                        <!-- FAQ Item Template -->
+                        <div class="faq-item bg-white border rounded-lg p-6 shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer toggle">
+                                <h2 class="font-bold text-xl">Why do we have to go to school?</h2>
+                                <button
+                                    class="toggle-btn bg-orange-400 text-white w-8 h-8 rounded flex items-center justify-center text-lg font-bold">+</button>
+                            </div>
+                            <div class="faq-content mt-3 text-gray-600 hidden">
+                                It is a long established fact that a reader will be distracted by the read content
+                                of a page when looking at its layout. Many desktop publish packages and web page editors
+                                now use Loremdefault model.
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-white border rounded-lg p-6 shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer toggle">
+                                <h2 class="font-bold text-xl">Why do we have to go to school?</h2>
+                                <button
+                                    class="toggle-btn bg-orange-400 text-white w-8 h-8 rounded flex items-center justify-center text-lg font-bold">+</button>
+                            </div>
+                            <div class="faq-content mt-3 text-gray-600 hidden">
+                                Education equips children with essential knowledge, skills, and values that help them
+                                grow and contribute to society meaningfully.
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-white border rounded-lg p-6 shadow-sm">
+                            <div class="flex justify-between items-center cursor-pointer toggle">
+                                <h2 class="font-bold text-xl">Why do we have to go to school?</h2>
+                                <button
+                                    class="toggle-btn bg-orange-400 text-white w-8 h-8 rounded flex items-center justify-center text-lg font-bold">+</button>
+                            </div>
+                            <div class="faq-content mt-3 text-gray-600 hidden">
+                                Schools provide a structured environment for learning, social interaction, and personal
+                                development.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- according end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team lg:pt-15 lg:pb-15 pt-10 pb-10">
+        <div class="container mx-auto">
+            <div class="text-center flex flex-col items-center ">
+                <p
+                    class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
+                    Meet Our Professional
+                </p>
+                <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[520px] wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".3s">Joyful Journeys Childcare and the Of a Education</h2>
+            </div>
+            <div class="lg:pt-15 pt-10">
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
+                    <!-- card start -->
+                    <div
+                        class="bg-white shadow-2xl border-2 border-transparent hover:border-[var(--green)] transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team">
+                        <div>
+                            <div>
+                                <img src="/assets/img/ascent-tailwind/professonal1.png" alt="team-1"
+                                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500">
+                            </div>
+                            <div class="pt-7.5">
+                                <h4 class="leading-[141%]">
+                                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                                </h4>
+                                <p class="pt-1">Marketing Coordinator</p>
+                                <ul class="flex items-center gap-5 pt-7.5">
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card start -->
+                    <!-- card start -->
+                    <div
+                        class="bg-white shadow-2xl border-2 border-transparent hover:border-[var(--green)] transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team">
+                        <div>
+                            <div>
+                                <img src="/assets/img/ascent-tailwind/professonal2.png" alt="team-2"
+                                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500">
+                            </div>
+                            <div class="pt-7.5">
+                                <h4 class="leading-[141%]">
+                                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                                </h4>
+                                <p class="pt-1">Marketing Coordinator</p>
+                                <ul class="flex items-center gap-5 pt-7.5">
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card start -->
+                    <!-- card start -->
+                    <div
+                        class="bg-white shadow-2xl border-2 border-transparent hover:border-[var(--green)] transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team">
+                        <div>
+                            <div>
+                                <img src="/assets/img/ascent-tailwind/professonal3.png" alt="team-3"
+                                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500">
+                            </div>
+                            <div class="pt-7.5">
+                                <h4 class="leading-[141%]">
+                                    <a href="" class="text-2xl font-medium">Jane Cooper</a>
+                                </h4>
+                                <p class="pt-1">Marketing Coordinator</p>
+                                <ul class="flex items-center gap-5 pt-7.5">
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""
+                                            class="rounded-md w-9 h-9 flex items-center justify-center bg-[var(--warm)] hover:text-white hover:bg-[var(--destructive)] transition-all duration-500">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card start -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="age lg:pt-15 lg:pb-15 pb-10 pt-10">
+        <div class="bg-[var(--warm)] lg:py-[120px] py-20 relative z-[1]">
+            <div class="container mx-auto px-5 py-5">
+                <div class="grid lg:grid-cols-[37%_auto] grid-cols-1 items-center xl:gap-20 gap-10">
+                    <!-- left side start -->
+                    <div>
+                        <div class="lg:max-w-[460px]">
+                            <p
+                                class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
+                                Student
+                                knowledge</p>
+                            <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow animate__animated animate__fadeInUp"
+                                data-wow-delay=".3s">Knowledge for All learn design Excellence for Everyone</h2>
+                        </div>
+                        <p class="pt-5 pb-7.5 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">Lorem ipsum
+                            dolor sit amet consectetur
+                            adipiscing elit platea the osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                        <a href=""
+                            class="btn-rounded-full bg-[var(--destructive)] hover:border-[var(--destructive)] hover:text-[var(--destructive-foreground)]">Learn
+                            More</a>
+                    </div>
+                    <!-- left side end -->
+                    <!-- right side start -->
+                    <div
+                        class="relative flex justify-center flex-wrap sm:flex-nowrap lg:justify-between md:gap-7.5 sm:gap-4 gap-3">
+                        <div class="mt-[110px] flex flex-col items-end md:gap-7.5 sm:gap-4 gap-3">
+                            <div
+                                class="bg-[#0A6375] rounded-[10px] xl:py-20 lg:py-10 py-7 xl:px-[85px] lg:px-10 md:px-6 px-5 lg:max-w-[300px] max-w-[190px] max-h-[300px] ">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[140%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>1-2</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                            <div
+                                class="bg-[var(--primary)] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>9-11</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:gap-7.5 sm:gap-4 gap-3">
+                            <div
+                                class="bg-[var(--secondary)] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>3-5</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                            <div
+                                class="bg-[var(--destructive)] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px] ">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>6-8</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                            <div
+                                class="bg-[var(--green)] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>16-18</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="self-center ">
+                            <div
+                                class="bg-[var(--primary)] rounded-[10px] xl:py-[53px] lg:py-9 py-7 xl:px-10 lg:px-8 md:px-6 px-5 max-w-[190px] max-h-[190px]">
+                                <h5
+                                    class="font-nunito text-white lg:text-[32px] md:text-2xl text-xl font-bold leading-[130%] text-center lg:max-w-[111px] md:max-w-25 max-w-20">
+                                    <span>12-15</span>
+                                    <span>Years</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right side end -->
+                </div>
+            </div>
+            <!-- shap -->
+            <div class="absolute 2xl:left-15 left-0 bottom-0 z-[-1] xl:block hidden">
+                <img src="/assets/img/ascent-tailwind/knowledge-lshpe.png" alt="tree">
+            </div>
+            <div
+                class="absolute 2xl:top-[120px] lg:top-16 top-5 right-[67px] 2xl:w-auto lg:w-48 w-32 animate-left-right">
+                <img src="/assets/img/ascent-tailwind/knowledge-animal.png" alt="animal">
+            </div>
+            <!-- shap -->
+        </div>
+    </section>
     <section class="testimonial"></section>
     <section class="blog"></section>
     <section class="letter"></section>
@@ -1350,6 +1650,21 @@
             });
         });
     </script> -->
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const toggle = item.querySelector('.toggle');
+            const content = item.querySelector('.faq-content');
+            const button = item.querySelector('.toggle-btn');
+
+            toggle.addEventListener('click', () => {
+                const isOpen = !content.classList.contains('hidden');
+                content.classList.toggle('hidden');
+                button.textContent = isOpen ? '+' : '−';
+                button.classList.toggle('bg-orange-400', isOpen);
+                button.classList.toggle('bg-teal-500', !isOpen);
+            });
+        });
+    </script>
 
 </body>
 
