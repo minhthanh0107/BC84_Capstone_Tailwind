@@ -142,3 +142,17 @@
 .font-nunito{
   font-family: Nunito;
 }
+.after\:bg-testimonial-banner::after{
+  content: var(--tw-content);
+  background-image: url('/assets/img/ascent-tailwind/bg-img1.png');
+}
+
+.after\:bg-cover::after{
+  content: var(--tw-content);
+  background-size: cover;
+}
+
+.after\:bg-no-repeat::after{
+  content: var(--tw-content);
+  background-repeat: no-repeat;
+}
