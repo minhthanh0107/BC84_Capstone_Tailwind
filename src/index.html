@@ -13,16 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <!-- Line awesome -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <!-- Swiper css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
-        integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Main css -->
@@ -751,60 +747,59 @@
         </div>
         <!-- shap end -->
     </section>
-    <section class="portfolio lg:pt-15 lg:pb-15 pt-10 pb-10">
-        <div class="container mx-auto px-4 py-5">
-            <div class="portfolio_text text-center flex flex-col items-center">
+    <section class="lg:pt-15 lg:pb-15 pt-10 pb-10 portfolio">
+        <div class="container mx-auto px-5 py-5">
+            <div class="text-center flex flex-col items-center">
                 <p
                     class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
-                    Latest Portfolio</p>
+                    Latest
+                    Portfolio</p>
                 <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[630px] wow animate__animated animate__fadeInUp"
                     data-wow-delay=".3s">Exploring Minds Elementary School Education the only school</h2>
             </div>
-            <div class="portfolio_content pt-10">
+            <div class="pt-10">
                 <ul class="flex items-center justify-center flex-wrap md:gap-7.5 gap-5">
-                    <li class="px-5 py-2.5 text-xl font-700 border border-[#F2F2F2] rounded-[10px] font-jost cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
-                        data-target="education" href="#pills-education" id="pills-education-tab" data-twe-toggle="pill"
-                        data-twe-target="#pills-education" data-twe-nav-active role="tab"
-                        aria-controls="pills-ecudation" aria-selected="true">
-
-                        Education</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
-                        data-target="school" href="#pills-school" id="pills-school-tab" data-twe-toggle="pill"
-                        data-twe-target="#pills-school" data-twe-nav-active role="tab" aria-controls="pills-school"
-                        aria-selected="false">School</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
-                        data-target="learn" href="#pills-learn" id="pills-learn-tab" data-twe-toggle="pill"
-                        data-twe-target="#pills-learn" role="tab" aria-controls="pills-learn" aria-selected="false">
-                        Learn</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 "
+                    <li class="px-5 py-2.5 text-xl font-700 active-tab border border-[#F2F2F2] rounded-[10px] font-jost cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
+                        data-target="education">Education</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
+                        data-target="school">School</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
+                        data-target="learn">Learn</li>
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
                         data-target="child">Child</li>
-                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500"
+                    <li class="px-5 py-2.5 text-xl font-700 text-[#686868] border border-[#F2F2F2] rounded-[10px] cursor-pointer hover:bg-[var(--primary)] hover:text-white transition-all duration-500 target-tab"
                         data-target="coaching">Coaching</li>
                 </ul>
                 <div class="mt-[64px] overflow-hidden relative wow animate__animated animate__fadeInUp"
                     data-wow-delay=".3s">
                     <!-- group one -->
-                    <div data-target="education" id="pills-education" role="tabpanel"
-                        aria-labelledby="pills-education-tab" data-twe-tab-active
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] relative top-0 left-0 transition-all duration-500 translate-y-0">
+                    <div data-target="education"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] relative top-0 left-0 transition-all duration-500 target-card tab-content visible opacity-100 translate-y-0">
                         <!-- card start -->
                         <div
-                            class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
+                            class="relative group/card col-span-full sm:col-start-1 md:col-end-5 sm:col-end-7 sm:row-span-2">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
+
+                            <!-- Overlay Layer -->
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
-                                <h5 class="text-center">
-                                    <a href="" class="text-white text-2xl font-medium">Exploring Minds
-                                        Elementary Best School</a>
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
+
+                                <h5 class="text-center mb-2">
+                                    <a href="" class="text-white text-2xl font-medium leading-snug">Exploring
+                                        Minds<br>Elementary Best School</a>
                                 </h5>
-                                <p class="text-white">Dreamland Elementary</p>
+                                <p class="text-white mb-6">Dreamland Elementary</p>
+
+                                <!-- Arrow Button -->
                                 <a href=""
-                                    class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute -bottom-5 left-1/2 -translate-x-1/2 overflow-hidden group">
+                                    class="bg-white w-11 h-11 rounded-full flex justify-center items-center cursor-pointer absolute bottom-4 left-1/2 -translate-x-1/2 shadow-md">
                                     <i class="fa-solid fa-arrow-right text-[var(--destructive-foreground)]"></i>
                                 </a>
                             </div>
+
                         </div>
+
                         <!-- card end -->
                         <!-- card start -->
                         <div
@@ -812,7 +807,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-2.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -830,7 +825,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-3.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -849,7 +844,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-5.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -867,7 +862,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-6.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -883,14 +878,14 @@
                     </div>
                     <!-- group one -->
                     <!-- group two -->
-                    <div data-target="school" id="pills-school" role="tabpanel" aria-labelledby="pills-school-tab"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
+                    <div data-target="school"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card tab-content">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -908,7 +903,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-2.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -926,7 +921,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-3.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -944,7 +939,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-5.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -960,17 +955,16 @@
                     </div>
                     <!-- group two -->
                     <!-- group three -->
-                    <div data-target="learn" id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
+                    <div data-target="learn"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card tab-content">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-7 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-3.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
-                                <h5 class="text-center">
-                                    <a href="" class="text-white text-2xl font-medium">Exploring Minds
-                                        Elementary Best School</a>
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
+                                <a href="" class="text-white text-2xl font-medium">Exploring Minds
+                                    Elementary Best School</a>
                                 </h5>
                                 <p class="text-white">Dreamland Elementary</p>
                                 <a href=""
@@ -985,7 +979,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-5.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1001,14 +995,14 @@
                     </div>
                     <!-- group three -->
                     <!-- group four -->
-                    <div data-target="child" id="child"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
+                    <div data-target="child"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 sm:grid-rows-[453px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card tab-content">
                         <!-- card start -->
                         <div class="sm:col-start-1 sm:col-end-8 col-span-full relative group/card max-h-[453px]">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1026,10 +1020,9 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-2.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
-                                <h5 class="text-center">
-                                    <a href="" class="text-white text-2xl font-medium">Exploring Minds
-                                        Elementary Best School</a>
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
+                                <a href="" class="text-white text-2xl font-medium">Exploring Minds
+                                    Elementary Best School</a>
                                 </h5>
                                 <p class="text-white">Dreamland Elementary</p>
                                 <a href=""
@@ -1042,15 +1035,15 @@
                     </div>
                     <!-- group four -->
                     <!-- group five -->
-                    <div data-target="coaching" id="coaching"
-                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0">
+                    <div data-target="coaching"
+                        class="grid lg:gap-7.5 gap-4 grid-cols-12 grid-rows-[277px] absolute top-0 left-0 transition-all duration-500 translate-y-10 invisible opacity-0 target-card tab-content">
                         <!-- card start -->
                         <div
                             class="sm:col-start-1 md:col-end-5 sm:col-end-7 col-span-full sm:row-span-2 relative group/card">
                             <img src="/assets/img/ascent-tailwind/portfolio-1.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1069,7 +1062,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-2.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1087,7 +1080,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-3.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1106,7 +1099,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-5.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1124,7 +1117,7 @@
                             <img src="/assets/img/ascent-tailwind/portfolio-6.png" alt="img"
                                 class="w-full h-full max-h-[300px] sm:max-h-full object-cover rounded-[10px]">
                             <div
-                                class="px-7.5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-[calc(100%-60px)] w-[calc(100%-60px)] opacity-0 invisible group-hover/card:visible group-hover/card:opacity-80 transition-all duration-500 bg-[var(--primary)] rounded-[10px] flex flex-col items-center justify-center">
+                                class="absolute top-[30px] bottom-[30px] left-[30px] right-[30px] p-7 opacity-0 invisible group-hover/card:visible group-hover/card:opacity-90 transition-all duration-500 bg-[var(--primary)]/90 rounded-[10px] flex flex-col items-center justify-center">
                                 <h5 class="text-center">
                                     <a href="" class="text-white text-2xl font-medium">Exploring Minds
                                         Elementary Best School</a>
@@ -1143,56 +1136,68 @@
             </div>
         </div>
     </section>
-    <section class="service pt-15 pb-15 relative bg-[var(--warm)] lg:bg-transparent">
-        <div class="container mx-auto px-4 py5">
+    <!-- Service Section -->
+    <section class="pt-15 pb-15 relative bg-[var(--warm)] lg:bg-transparent services">
+        <div class="container mx-auto px-6">
             <div
                 class="relative after:absolute after:right-0 after:top-0 after:lg:bg-[var(--warm)] after:bg-transparent after:w-[calc(100%-279px)] after:h-[calc(100%-120px)] after:rounded-[10px] after:z-[-1]">
                 <div class="flex lg:flex-row flex-col justify-between lg:items-center">
                     <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[30%]">
-                        <p
-                            class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
+                        <p class="text-[var(--secondary-foreground)] font-bubblegum-sans text-[19px] wow animate__animated animate__fadeInUp">
                             Latest Service
                         </p>
                         <h2 class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow animate__animated animate__fadeInUp"
-                            data-wow-delay=".3s">Building a Str Foundation for Success</h2>
+                            data-wow-delay=".3s">
+                            Building a Strong Foundation for Success
+                        </h2>
                     </div>
-                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%]">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis
-                            hendrerit proin mollis pretium facilisi in, ligula volutpat </p>
+                    <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[50%] mt-5 lg:mt-0">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit platea
+                            pharetra, nostra mattis hendrerit proin mollis pretium facilisi
+                            in, ligula volutpat
+                        </p>
                     </div>
                 </div>
-                <div class="lg:flex justify-between">
+
+                <div class="lg:flex justify-between mt-10">
+                    <!-- Pagination and Read More -->
                     <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[25%]">
                         <div class="relative lg:mt-7.5 mt-5">
-                            <div class="service-pagination"></div>
+                            <div class="service-pagination mb-6 flex gap-3 justify-start"></div>
                             <div class="lg:mt-10 mt-5">
-                                <a href=""
-                                    class="px-7.5 py-5 border border-secondary rounded-md max-h-15 min-w-40 whitespace-nowrap btn group">
-                                    Read More <i
+                                <a href="#"
+                                    class="px-7.5 py-5 border border-[var(--secondary)] rounded-md max-h-15 min-w-40 whitespace-nowrap btn group inline-flex items-center gap-2">
+                                    Read More
+                                    <i
                                         class="fa-solid fa-arrow-right text-[var(--secondary-foreground)] transition-all duration-500 group-hover:text-white"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Service Slider -->
                     <div class="flex-shrink-0 flex-grow-0 basis-auto lg:w-[70%] mt-6 lg:mt-0">
-                        <div class="">
+                        <div>
                             <div class="swiper service-swiper">
                                 <div
-                                    class="swiper-wrapper [&_.swiper-slide-active>.service-card]:bg-white [&_.swiper-slide-active_.card-footer]:opacity-100 [&_.swiper-slide-active_.card-footer]:visible ">
-                                    <!-- card start -->
+                                    class="swiper-wrapper [&_.swiper-slide-active>.service-card]:bg-white [&_.swiper-slide-active_.card-footer]:opacity-100 [&_.swiper-slide-active_.card-footer]:visible">
+                                    <!-- Slide 1 -->
                                     <div class="swiper-slide">
                                         <div
                                             class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-2xl m-2.5 group/card">
-                                            <i class="icon-mat text-[65px] text-[var(--green-foreground)]"></i>
+                                            <i
+                                                class="icon-mat text-[65px] text-[var(--green-foreground)] fa-solid fa-chalkboard-user"></i>
                                             <h4 class="lg:max-w-[176px] mt-5">
                                                 <a href="service-details.html"
-                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Learning
-                                                    School heres us</a>
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500">Learning
+                                                    School here’s us</a>
                                             </h4>
                                             <div
                                                 class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
-                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
-                                                    conse adipiscing </p>
+                                                <p class="mt-[15px] lg:max-w-[223px]">
+                                                    Lorem ipsum dolor sit amet a the a conse adipiscing
+                                                </p>
                                                 <a href="service-details.html"
                                                     class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
                                                     <span
@@ -1206,21 +1211,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- card end -->
-                                    <!-- card start -->
+
+                                    <!-- Slide 2 -->
                                     <div class="swiper-slide">
                                         <div
                                             class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-2xl m-2.5 group/card">
-                                            <i class="icon-baby-body text-[65px] text-[var(--green-foreground)]"></i>
+                                            <i
+                                                class="icon-baby-body text-[65px] text-[var(--green-foreground)] fa-solid fa-baby"></i>
                                             <h4 class="lg:max-w-[176px] mt-5">
                                                 <a href="service-details.html"
-                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Learning
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500">Learning
                                                     in the School</a>
                                             </h4>
                                             <div
                                                 class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
-                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
-                                                    conse adipiscing </p>
+                                                <p class="mt-[15px] lg:max-w-[223px]">
+                                                    Lorem ipsum dolor sit amet a the a conse adipiscing
+                                                </p>
                                                 <a href="service-details.html"
                                                     class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
                                                     <span
@@ -1234,21 +1241,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- card end -->
-                                    <!-- card start -->
+
+                                    <!-- Slide 3 -->
                                     <div class="swiper-slide">
                                         <div
                                             class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-2xl m-2.5 group/card">
-                                            <i class="icon-teddy-bear text-[65px] text-[var(--green-foreground)]"></i>
+                                            <i
+                                                class="icon-teddy-bear text-[65px] text-[var(--green-foreground)] fa-solid fa-paw"></i>
                                             <h4 class="lg:max-w-[176px] mt-5">
                                                 <a href="service-details.html"
-                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Stars
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500">Stars
                                                     Preschool our design</a>
                                             </h4>
                                             <div
                                                 class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
-                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
-                                                    conse adipiscing </p>
+                                                <p class="mt-[15px] lg:max-w-[223px]">
+                                                    Lorem ipsum dolor sit amet a the a conse adipiscing
+                                                </p>
                                                 <a href="service-details.html"
                                                     class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
                                                     <span
@@ -1262,21 +1271,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- card end -->
-                                    <!-- card start -->
+
+                                    <!-- Slide 4 -->
                                     <div class="swiper-slide">
                                         <div
                                             class="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-white transition-all duration-500 hover:shadow-2xl m-2.5 group/card">
-                                            <i class="icon-mat text-[65px] text-[var(--green-foreground)]"></i>
+                                            <i
+                                                class="icon-books text-[65px] text-[var(--green-foreground)] fa-solid fa-book"></i>
                                             <h4 class="lg:max-w-[176px] mt-5">
                                                 <a href="service-details.html"
-                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500 ">Stars
-                                                    Preschool our design</a>
+                                                    class="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-[var(--green-foreground)] transition-all duration-500">Preschool
+                                                    Program</a>
                                             </h4>
                                             <div
                                                 class="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
-                                                <p class="mt-[15px] lg:max-w-[223px]">Lorem ipsum dolor sit amet a the a
-                                                    conse adipiscing </p>
+                                                <p class="mt-[15px] lg:max-w-[223px]">
+                                                    Lorem ipsum dolor sit amet a the a conse adipiscing
+                                                </p>
                                                 <a href="service-details.html"
                                                     class="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
                                                     <span
@@ -1290,19 +1301,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- card end -->
                                 </div>
+                                <!-- Thêm các nút điều hướng nếu muốn (bỏ nếu không cần) -->
+                                <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Hình ảnh shape động -->
+            <div class="absolute lg:left-24 left-4 lg:bottom-20 bottom-3 animate-left-right sm:block hidden">
+                <img src="/assets/img/ascent-tailwind/man.png" alt="img" />
+            </div>
         </div>
-        <!-- shap start -->
-        <div class="absolute lg:left-24 left-4 lg:bottom-18 bottom-3 animate-left-right sm:block hidden">
-            <img src="/assets/img/ascent-tailwind/man.png" alt="img">
-        </div>
-        <!-- shap end -->
     </section>
     <section class="faq lg:pb-15 pb-10">
         <div class="container mx-auto px-5 py-5">
@@ -2071,46 +2084,45 @@
     <!-- TW-elements -->
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
     <!-- Swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- WOW -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
+        // Khởi tạo WOW.js animation
         new WOW().init();
+
+        // Khởi tạo Swiper
+        const swiper = new Swiper(".service-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".service-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    // Tạo bullets pagination dưới dạng chấm hoặc số
+                    return `<span class="${className} rounded-full w-3 h-3 bg-green-500 inline-block mx-1 cursor-pointer"></span>`;
+                },
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+        });
     </script>
     <script>
         document.getElementById('scroll-up').addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
-
-    <!-- <script>
-        const tabs = document.querySelectorAll('.target-tab');
-        const contents = document.querySelectorAll('.tab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active-tab class
-                tabs.forEach(t => t.classList.remove('active-tab'));
-                // Hide all content
-                contents.forEach(c => c.classList.add('hidden'));
-
-                // Activate current tab
-                tab.classList.add('active-tab');
-
-                // Show corresponding content
-                const targetId = tab.getAttribute('data-target');
-                const contentToShow = document.getElementById(targetId);
-                if (contentToShow) {
-                    contentToShow.classList.remove('hidden');
-                }
-            });
-        });
-    </script> -->
     <script>
         document.querySelectorAll('.faq-item').forEach(item => {
             const toggle = item.querySelector('.toggle');
@@ -2126,6 +2138,34 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".target-tab");
+            const contents = document.querySelectorAll(".target-card");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const target = tab.getAttribute("data-target");
+
+                    // Cập nhật UI tab
+                    tabs.forEach((t) => t.classList.remove("active-tab"));
+                    tab.classList.add("active-tab");
+
+                    // Hiển thị đúng nội dung tab
+                    contents.forEach((content) => {
+                        if (content.getAttribute("data-target") === target) {
+                            content.classList.remove("invisible", "opacity-0", "translate-y-10");
+                            content.classList.add("visible", "opacity-100", "translate-y-0");
+                        } else {
+                            content.classList.remove("visible", "opacity-100", "translate-y-0");
+                            content.classList.add("invisible", "opacity-0", "translate-y-10");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
 
 </body>
 

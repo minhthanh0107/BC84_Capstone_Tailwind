@@ -213,7 +213,7 @@ scroll_up.addEventListener("click", () => {
 const testimonial = new Swiper('.testimonial-swiper', {
     autoplay: {
         delay: 5000,
-      },
+    },
     loop: true,
     spaceBetween: 30,
     breakpoints: {
@@ -282,7 +282,33 @@ const service_swiper = new Swiper('.service-swiper', {
     },
 });
 
-
-
 new WOW().init();
 
+// // Bắt tất cả các tab và nội dung
+// const tabs = document.querySelectorAll('.target-tab');
+// const cards = document.querySelectorAll('.target-card');
+
+// tabs.forEach(tab => {
+//     tab.addEventListener('click', () => {
+//         const target = tab.getAttribute('data-target');
+
+//         // 1. Remove active style on all tabs
+//         tabs.forEach(t => {
+//             t.classList.remove('active-tab');
+//             t.classList.add('text-[#686868]');
+//         });
+
+//         // 2. Hide all target-card blocks
+//         cards.forEach(card => {
+//             if (card.getAttribute('data-target') === target) {
+//                 card.classList.remove('hidden');
+//             } else {
+//                 card.classList.add('hidden');
+//             }
+//         });
+
+//         // 3. Active current tab
+//         tab.classList.add('active-tab');
+//         tab.classList.remove('text-[#686868]');
+//     });
+// });
