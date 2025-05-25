@@ -686,6 +686,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
+  }
   .gap-7\.5 {
     gap: calc(var(--spacing) * 7.5);
   }
@@ -860,6 +863,9 @@
   }
   .bg-\[linear-gradient\(180deg\,_rgba\(238\,255\,200\,0\.00\)_0\%\,_\#E9FFB6_100\%\)\] {
     background-image: linear-gradient(180deg, rgba(238,255,200,0.00) 0%, #E9FFB6 100%);
+  }
+  .bg-\[url\(\'\/assets\/img\/ascent-tailwind\/bg-img\.png\'\)\] {
+    background-image: url('/assets/img/ascent-tailwind/bg-img.png');
   }
   .bg-\[url\(\'\/assets\/img\/ascent-tailwind\/egg-shap\.png\'\)\] {
     background-image: url('/assets/img/ascent-tailwind/egg-shap.png');
